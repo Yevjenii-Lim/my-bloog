@@ -1,0 +1,124 @@
+
+
+/* global class */
+    .flex-row {
+        display: flex;
+        flex-direction: row;
+    }
+    ul {
+        list-style: none;
+        margin-left: 0;
+        padding-left: 0;
+    }
+    h1 {
+        margin: 0;
+    }
+    a {
+        padding: 0;
+    }
+    p {
+        margin: 0;
+    }
+
+/* x global class x */
+
+
+header {
+    transition: 0.5s;
+    height: 10vh;
+    border: 1px solid black;
+    overflow: hidden;
+    display: flex;
+    padding: 0 3rem;
+    justify-content: space-between;
+}
+header h1 {
+    padding: 1.4rem 0rem;
+    /* padding-bottom: 3rem; */
+    display: block;
+    font-size: 1.6rem;
+}
+.nav-list {
+    margin: 0;
+}
+.list-item {
+    padding: 1.6rem 1rem;
+    font-size: 1.1rem;
+    position: relative;
+}
+
+.social-media {
+    padding: 1.4rem 0;
+}
+.social-media a {
+    color: black;
+    font-size: 1.4rem;
+}
+.togle-collaps {
+    display: none;
+    position: absolute;
+    top: 1%;
+    width: 70%;
+}
+.toggle-icon {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+}
+
+/* X header X */
+
+
+/* main */
+ main .background {
+    background-image: url('../img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ main .background section {
+     margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+ }
+ main .background section p{
+    font-size: 2rem;
+    /* background-color: black; */
+    color: #c7a003;
+ }
+ main .background section button {
+     height: 2.5rem;
+     border-radius: 1rem;
+     background-color: #c7a003;
+     color: white;
+     font-variant: small-caps;
+     outline: none;
+     border: none;
+     transition: 0.2s;
+ }
+
+ main .background section button:hover {
+     cursor: pointer;
+     background: transparent;
+     border:1px solid white;
+ }
+
+/*  x   main  x   */
+
+
+@media (max-width:750px){
+    .togle-collaps {
+        display: initial;
+    }
+   
+    header, .nav-list{
+        flex-direction: column;
+        /* align-items: initial; */
+    }
+    
+}
